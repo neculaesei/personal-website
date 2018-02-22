@@ -1,0 +1,208 @@
+.section.hero
+  .container
+    .row
+        img.center(src='/assets/images/homepage-hero.svg')
+    .row
+      .center-content
+        h1 Andrei Neculaesei
+        p
+          | Software engineer, JavaScript lover and security researcher.
+          br
+          | Currently doing Vue for 
+          a(href='http://ninesix.ro/') NineSix
+          |  in Bucharest.
+        .cta
+          a.button.primary(href='/articles') Read my articles
+          a.button(href='/projects') Check my projects
+
+.section.newsletter
+  .container
+    .row
+      h2.center.underlined Subscribe to my weekly newsletter
+    .row
+      p.center.center-content
+        | Every day I spend time to keep up with what goes on in technology,
+        br
+        | I collect and classify all this knowledge and assemble it into a newsletter.
+    .row
+      .cta.center-content
+        input(placeholder='Your email', name="email")
+        button.button.primary Subscribe
+    .row
+      a.muted.center View past issues
+
+.section.about
+  .container
+    .row
+      h2.section-title.underlined About me
+    .row
+      p.section-subtitle
+        | Full stack developer, with experience in both corporate and startup
+        | environments, and a taste for building cool stuff.
+    .row
+      p.section-body
+        | I’m 24 years old, born and raised in Romania. I’ve learned everything I know on my own
+        | and by working with amazing people.
+        br
+        br
+        | Front end web development is my strongest area, as that’s what I’ve done the most in the
+        | past 4 years. I don’t limit myself in any way though, over the years I’ve worked and played with
+        | many technologies from C/C++ to PHP, C# to D, Swift, and most JavaScript related things.
+        br
+        br
+        | JavaScript is my favourite and by far what I prefer to work with.
+
+.section.separator.center-content
+  img(src='/assets/images/shape-1.svg')
+
+.section.work
+  .container
+    .row
+      h2.section-title.underlined Work experience
+    .row
+      p.section-subtitle
+        | I’ve been lucky to meet and work with amazing people, they’ve taught
+        | me a lot and I’m grateful for that.
+    .row
+      .experience-timeline
+        .job
+          .headline
+            span.company NineSix
+            span.timeframe July 2017 - Present
+          .position
+            img(src='/assets/images/icon-tie.svg')
+            div Senior front-end developer
+          .description
+            img(src='/assets/images/icon-file.svg')
+            div
+              | This is my current job, we're building an awesome data-driven marketing platform.
+              br
+              | I am responsible for the front-end, which has been completely migrated to Vue.js from Angular 1.
+              br
+              | This job is awesome because I get to play with Vue every day.
+          .stack
+            img(src='/assets/images/icon-cogs.svg')
+            div
+              | - JavaScript: Vue.js (2.x), Node.js
+              br
+              | - CSS: Sass, Bootstrap 4
+        .job
+          .headline
+            span.company Optaros
+            span.timeframe Dec 2016 - July 2017
+          .position
+            img(src='/assets/images/icon-tie.svg')
+            div Demandware developer
+          .description
+            img(src='/assets/images/icon-file.svg')
+            div
+              | Optaros has been my first job in Romania, and also my first job in the
+              | e-commerce space. Here I've learned what it means to plan, build and
+              | maintain an online store.
+          .stack
+            img(src='/assets/images/icon-cogs.svg')
+            div
+              | - Platforms: Salesforce Commerce Cloud (Demandware), Magento 2
+              br
+              | - JavaScript: Demandware Script, Node.js, Underscore, Electron, jQuery
+              br
+              | - CSS: Less, Sass, Bootstrap 4
+              br
+              | - Others: PHP, Python
+        .job
+          .headline
+            span.company RedWasp Cybersecurity
+            span.timeframe Mar 2016 - Sep 2016
+          .position
+            img(src='/assets/images/icon-tie.svg')
+            div CTO, Head of Security, co-founder
+          .description
+            img(src='/assets/images/icon-file.svg')
+            div
+              | Having plenty of experience in penetration testing, I've co-founded a
+              | company that sold this as a service.
+              br
+              | I developed and managed the whole infrastructure behind it, automated
+              | security tests and raport generation, integrated open-source and commercial
+              | tools and did manual discovery and exploitation.
+              br
+              | We developed many in-house tools.
+          .stack
+            img(src='/assets/images/icon-cogs.svg')
+            div
+              | - Node.js, Python, PHP
+        .job
+          .headline
+            span.company Airtame
+            span.timeframe Apr 2014 - Mar 2016
+          .position
+            img(src='/assets/images/icon-tie.svg')
+            div Software Engineer
+          .description
+            img(src='/assets/images/icon-file.svg')
+            div
+              | Airtame has been, hands down, the coolest job I've had so far. Great
+              | project, great technologies and an amazing team.
+              br
+              | There are many areas I've worked on (as I joined the company early), from
+              | the desktop client which was first written in C++ (Qt) and later migrated
+              | to node-webkit and then Electron, to software than ran on the device
+              | (Airtame is a hardware + software project).
+          .stack
+            img(src='/assets/images/icon-cogs.svg')
+            div
+              | - C++: Qt, Node.js C++ addons
+              br
+              | - JavaScript: Electron, Node.js, React
+              br
+              | - Others: PHP
+        .job
+          .headline
+            span.company IT-Kartellet
+            span.timeframe Apr 2014 - Mar 2016
+          .position
+            img(src='/assets/images/icon-tie.svg')
+            div Software Engineer
+          .description
+            img(src='/assets/images/icon-file.svg')
+            div
+              | IT-Kartellet kickstarted my career as a software developer. Here I worked
+              | on their the printing solution for universities, and I also did consultancy
+              | for various customers on Drupal and Moodle.
+          .stack
+            img(src='/assets/images/icon-cogs.svg')
+            div
+              | - Platforms: Drupal, Moodle
+              br
+              | - .Net: C#, ASP
+              br
+              | - Others: JavaScript, PHP
+
+.section.separator.center-content
+  img(src='/assets/images/shape-2.svg')
+
+.section.security
+  .container
+    .row
+      h2.section-title.underlined Security research
+    .row
+      p.section-subtitle
+        | As much as I enjoy building stuff, I have a hidden passion for breaking things.
+    .row
+      p.section-body
+        | I love the whole adventure of finding ways to make programs and devices behave in ways they’re not supposed to. Over the years I’ve managed to get into some hall of fame lists.
+    .row
+      ul
+        li
+          a(src='https://support.apple.com/en-us/HT205212') Apple iOS - CVE-2015-5820
+        li
+          | Apple Web Server 
+          a(href='https://support.apple.com/en-us/HT207627') [1]
+          | 
+          a(href='https://support.apple.com/en-vn/HT207628') [2]
+        li
+          a(href='https://technet.microsoft.com/en-us/security/cc308575') Microsoft
+        li
+          a(href='https://www.spotify.com/dk/bounty/') Spotify
+        li
+          a(href='https://help.netflix.com/en/node/6657') Netflix

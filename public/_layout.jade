@@ -1,0 +1,25 @@
+doctype
+html
+  head
+    title Andrei Neculaesei - Learn, grow, teach
+    meta(name="viewport", content="width=device-width, user-scalable=no")
+    link(rel='stylesheet' href='/css/main.css')
+  body
+    .header
+      .container
+        a(href='/')
+          img.logo(src='/assets/images/logo.svg')
+        nav.menu
+          a.active(href='/') About
+          a(href='https://medium.com/neculaesei') Articles
+          a(href='/projects') Projects
+          a(href='/contact') Contact
+    != yield
+    .footer
+      img(src='/assets/images/footer-group.svg')
+      .copyright
+        | This is my personal website. The views expressed here are mine alone and not those of my employer(s).
+        br
+        br
+        | Copyright &copy; Andrei Neculaesei 2018
+

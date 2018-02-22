@@ -1,0 +1,274 @@
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_utils.scss";
+@import "_layout.scss";
+
+/* Body */
+body {
+  font-family: $font-text;
+  font-size: $font-size;
+  background: $page-background;
+  color: $text-color;
+  margin: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-weight: 500;
+  font-family: $font-heading;
+  color: $color-black;
+}
+h1 {
+  font-size: 38px;
+}
+h2 {
+  font-size: 28px;
+}
+
+/* Links and buttons */
+a, button {
+  color: $color-black;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+a {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+  padding: 14px 28px;
+  border-radius: 4px;
+  background: $color-lighter-gray;
+  color: $color-black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  border: 0;
+  cursor: pointer;
+
+  &.primary {
+    background: #1539E6;
+    color: white;
+  }
+
+  &:focus, &:active {
+    outline: 0;
+  }
+}
+
+/* Inputs */
+input {
+  padding: 14px 20px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+  border-radius: 4px;
+  font-size: $font-size + 2;
+  color: #8C8C8C;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+/* Header */
+.header {
+  background: $color-lightest-gray;
+  padding: 48px 20px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 44px;
+  }
+
+  nav a {
+    margin-left: 44px;
+    color: $color-dark-blue;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: $font-size-nav;
+
+    &.active {
+      color: $color-black;
+      border-bottom: 2px solid $color-gold;
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+
+  img {
+    margin: 90px 0;
+  }
+
+  .copyright {
+    background: $color-lightest-gray;
+    color: $color-light-gray;
+    padding: 36px 0;
+    font-size: 14px;
+  }
+}
+
+/* All sections */
+.section {
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .section-subtitle {
+    color: $color-black;
+    font-size: 20px;
+    max-width: 800px;
+    margin-top: 30px;
+  }
+  .section-body {
+    margin-top: 0;
+    max-width: 660px;
+  }
+}
+
+.section.s404 {
+  h3 {
+    line-height: 30px;
+  }
+}
+
+/* Hero */
+.hero {
+  h1 {
+    color: $color-blue;
+    font-family: $font-heading;
+    margin-top: 55px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    color: $color-black;
+    line-height: 34px;
+    margin-top: 20px;
+  }
+  .cta {
+    margin-top: 50px;
+
+    .button:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+
+/* Newsletter */
+.newsletter {
+  background-image: url("/assets/images/geometric-pattern.png");
+  background-size: contain;
+  background-color: $color-lightest-gray;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: $color-black;
+    margin-bottom: 30px;
+  }
+
+  button {
+    margin-left: 20px;
+  }
+
+  a.muted {
+    margin-top: 30px;
+    color: $color-dark-gray;
+    text-decoration: underline;
+  }
+}
+
+/* Experience timeline */
+.experience-timeline {
+  border-left: 2px solid $color-gold;
+  margin-top: 40px;
+  margin-left: 50px;
+
+  img {
+    margin-right: 10px;
+    height: 16px;
+  }
+
+  .job {
+    > div {
+      margin-bottom: 20px;
+
+      &:not(.headline) {
+        padding-left: 115px;
+      }
+    }
+
+    .headline {
+      display: flex;
+      align-items: center;
+      .company {
+        font-size: 22px;
+        color: $color-black;
+      }
+      .timeframe {
+        font-size: 14px;
+        margin-left: 15px;
+      }
+      &:before {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 100px;
+        background: $color-gold;
+        margin-right: 15px;
+      }
+    }
+
+    .position {
+      font-size: 18px;
+      color: $color-black;
+    }
+
+    .position, .description, .stack {
+      img {
+        vertical-align: top;
+        margin-top: 4px;
+      }
+      div {
+        display: inline-block;
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+/* Security section */
+.security {
+  ul {
+    list-style-type: none;
+    padding-left: 30px;
+  }
+
+  li {
+    margin-bottom: 10px;
+    font-size: 18px;
+
+    &:before {
+      content: '•';
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 18px;
+      color: $color-gold;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.section {
+  padding: 90px 0;
+
+  &.separator {
+    padding: 0;
+  }
+}
+.container {
+  max-width: $container-max-width;
+  margin: auto;
+}
+.row {
+  display: flex;
+
+  > div {
+    flex-grow: 1;
+  }
+}
