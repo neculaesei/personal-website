@@ -2,18 +2,20 @@ doctype
 html
   head
     title Andrei Neculaesei - Learn, grow, teach
-    meta(name="viewport", content="width=device-width, user-scalable=no")
+    meta(name="viewport" content="width=device-width, user-scalable=no")
+    link(rel="icon" type="image/png" href="/assets/images/logo.png")
     link(rel='stylesheet' href='/css/main.css')
+
   body
     .header
       .container
         a(href='/')
           img.logo(src='/assets/images/logo.svg')
         nav.menu
-          a.active(href='/') About
-          a(href='https://medium.com/neculaesei') Articles
-          a(href='/projects') Projects
-          a(href='/contact') Contact
+          a(class="#{ current.source == 'index' ? 'active' : '' }" href="/") About
+          a(class="#{ current.source == 'articles' ? 'active' : '' }" href="/articles") Articles
+          a(class="#{ current.source == 'projects' ? 'active' : '' }" href="/projects") Projects
+          a(class="#{ current.source == 'contact' ? 'active' : '' }" href="/contact") Contact
     != yield
     .footer
       img(src='/assets/images/footer-group.svg')
@@ -22,4 +24,3 @@ html
         br
         br
         | Copyright &copy; Andrei Neculaesei 2018
-

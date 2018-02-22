@@ -46,9 +46,10 @@ a {
   color: $color-black;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   border: 0;
   cursor: pointer;
+  display: inline-block;
 
   &.primary {
     background: #1539E6;
@@ -58,10 +59,15 @@ a {
   &:focus, &:active {
     outline: 0;
   }
+
+  &.small {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
 }
 
 /* Inputs */
-input {
+input, textarea {
   padding: 14px 20px;
   border-radius: 4px;
   background: #FFFFFF;
@@ -270,5 +276,60 @@ input {
       font-size: 18px;
       color: $color-gold;
     }
+  }
+}
+
+/* Mediumable */
+.mediumable-publication {
+  margin-top: 50px;
+
+  .mediumable-post {
+    max-width: 800px;
+    position: relative;
+    margin-bottom: 30px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      content: '';
+      width: 4px;
+      height: 100%;
+      background: $color-lighter-gray;
+      display: block;
+    }
+
+    .mediumable-title {
+      font-size: 24px;
+    }
+    .mediumable-subtitle {
+      margin-top: 10px;
+    }
+  }
+}
+
+/* Projects */
+ul.projects {
+  list-style-type: none;
+  max-width: 800px;
+
+  li {
+    margin-top: 30px;
+
+    > div {
+      margin-top: 10px;
+    }
+
+    .name {
+      font-size: 24px;
+      color: $color-black;
+    }
+    .actions {
+      margin-top: 14px;
+    }
+    .button.primary {
+      margin-right: 10px;
+    }
+
   }
 }
