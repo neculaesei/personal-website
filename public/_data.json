@@ -1,0 +1,14 @@
+{
+  "articles": {
+    "title": "Articles | Andrei Neculaesei",
+    "description": "Read my articles on development, security and tech in general."
+  },
+  "projects": {
+    "title": "Projects | Andrei Neculaesei",
+    "description": "Check out some of my side projects, you can contribute to most of them."
+  },
+  "contact": {
+    "title": "Contact | Andrei Neculaesei",
+    "description": "Get in touch with me. If you think there's something we can build together just reach out."
+  }
+}

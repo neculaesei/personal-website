@@ -81,6 +81,11 @@ input, textarea {
   }
 }
 
+/* Images */
+img {
+  max-width: 100%;
+}
+
 /* Header */
 .header {
   background: $color-lightest-gray;
@@ -94,6 +99,7 @@ input, textarea {
 
   .logo {
     width: 44px;
+    max-width: none;
   }
 
   nav a {
@@ -331,5 +337,128 @@ ul.projects {
       margin-right: 10px;
     }
 
+  }
+}
+
+/* Contact */
+.contact {
+  border: 1px solid $color-lighter-gray;
+  border-radius: 4px;
+  background-image: url('/assets/images/geometric-pattern.png');
+  background-size: 20%;
+  background-color: $color-lightest-gray;
+
+  > .container {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  input, textarea {
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    color: $color-black;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+  .separator {
+    margin: 20px 0;
+  }
+
+  .social {
+    a {
+      background: white;
+      border: 1px solid $color-light-gray;
+      border-radius: 100%;
+      padding: 12px 12px;
+      font-size: 0;
+    }
+    a:first-child {
+      margin-right: 20px;
+    }
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+
+    .section-title {
+      font-size: 28px;
+    }
+  }
+  .container {
+    padding: 0 26px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero {
+    h1 {
+      margin-top: 25px;
+    }
+    p {
+      font-size: 18px;
+      line-height: normal;
+    }
+    .cta .button{
+      width: 80%;
+      margin-top: 10px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .experience-timeline {
+    margin-left: 0;
+
+    .job .headline:before {
+      width: 30px;
+    }
+    .job >div:not(.headline) {
+      padding-left: 50px;
+    }
+  }
+
+  .footer {
+    .footer-image {
+      padding: 0 20px;
+
+      img {
+        margin: 40px 0;
+      }
+    }
+    .copyright {
+      padding: 30px 20px;
+    }
+  }
+
+  .mediumable-publication {
+    .mediumable-post {
+      .mediumable-title {
+        font-size: 18px;
+      }
+    }
   }
 }
