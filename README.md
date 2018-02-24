@@ -11,14 +11,14 @@ Make sure you install [Harp](http://harpjs.com/) to be able to develop and compi
 ```shell
 git clone git@github.com:neculaesei/personal-website.git
 cd personal-website
-harp server .
+harp server
 # Visit localhost:9000
 ```
 
 ## Compiling to a static site
 
 ```shell
-harp compile .
+harp compile
 # Static files will be generated in the www folder
 ```
 
