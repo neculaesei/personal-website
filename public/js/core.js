@@ -1,5 +1,15 @@
+// Mobile menu
+document.querySelector('.burger').onclick = function () {
+  var nav = document.querySelector('nav')
+  if (nav.classList.contains('active')) {
+    nav.classList.remove('active')
+  } else {
+    nav.classList.add('active')
+  }
+}
+
+// Tracker
 var _paq = _paq || [];
-/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
 _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
 _paq.push(["setCookieDomain", "*.andreineculaesei.com"]);
 _paq.push(['trackPageView']);

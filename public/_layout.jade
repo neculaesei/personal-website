@@ -24,6 +24,8 @@ html(lang="en-US")
       .container
         a(href='/')
           img.logo(src='/assets/images/logo.svg' alt="Andrei Neculaesei")
+        button.burger
+          img(src='/assets/images/icon-burger.svg' alt="Menu button")
         nav.menu
           a(class="#{ current.source == 'index' ? 'active' : '' }" href="/") About
           a(class="#{ current.source == 'articles' ? 'active' : '' }" href="/articles") Articles
@@ -38,5 +40,4 @@ html(lang="en-US")
         br
         br
         | Copyright &copy; Andrei Neculaesei 2018
-        <!-- Matomo -->
-    script(type="text/javascript" src="/js/track.js")
+    script(type="text/javascript" src="/js/core.js")

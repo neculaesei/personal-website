@@ -2,6 +2,7 @@
 @import "_variables.scss";
 @import "_utils.scss";
 @import "_layout.scss";
+@import "_animations.scss";
 
 /* Body */
 body {
@@ -114,6 +115,10 @@ img {
       border-bottom: 2px solid $color-gold;
     }
   }
+
+  .burger {
+    display: none;
+  }
 }
 
 /* Footer */
@@ -158,20 +163,30 @@ img {
 
 /* Hero */
 .hero {
+  img, h1, p, .cta {
+    animation: pop 0.5s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity: 0;
+  }
+  img {
+    animation-delay: 0s;
+  }
   h1 {
+    animation-delay: 0.2s;
     color: $color-blue;
     font-family: $font-heading;
     margin-top: 55px;
     margin-bottom: 20px;
   }
   p {
+    animation-delay: 0.4s;
     font-size: 20px;
     color: $color-black;
     line-height: 34px;
     margin-top: 20px;
   }
   .cta {
-    margin-top: 50px;
+    animation-delay: 0.6s;
+    margin-top: 40px;
 
     .button:first-child {
       margin-right: 20px;
@@ -408,8 +423,59 @@ ul.projects {
     text-align: center;
   }
 
-  .menu {
-    display: none;
+  .header {
+    padding: 25px 20px;
+
+    .container {
+      display: block;
+
+      .burger {
+        display: block;
+        border: 0;
+        margin: 0;
+        padding: 10px;
+        background: transparent;
+        box-sizing: border-box;
+        float: right;
+
+        &:focus, &:active {
+          outline: 0;
+        }
+
+        img {
+          width: 20px;
+        }
+      }
+
+      nav {
+        display: none;
+        margin-top: 20px;
+        padding: 10px 0;
+        box-sizing: border-box;
+
+        &.active {
+          display: block;
+        }
+
+        a {
+          display: block;
+          margin: 0;
+          margin-top: 10px;
+          text-align: center;
+          position: relative;
+          padding: 10px 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &.active {
+            border: 0;
+            color: $color-gold;
+          }
+        }
+      }
+    }
   }
 
   .hero {
